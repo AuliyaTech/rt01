@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css?family=Chivo|Permanent+Marker|Reenie+Beanie&display=swap');
+/*brand font-sizing */
+:root{
+    --fs-lg: 60px; /* font-size-large */
+    --fs-md: 40px; /* font-size-large */
+    --fs-sm: 20px; /* font-size-large */
+    --fs-xs: 5px; /* font-size-large*/
+    
+    /* brand colors */
+    --c-p: #315252; /* color-primary */
+    --c-s: #F5B142; /* color-secondary */
+    --c-t:#42302D; /* color-tertiary */
+    --c-q:#FCE7DB; /* color-quatenary */
+    
+    /* brand images */
+    --bg-img1: url("./utils/images/background.png"); /*background-image-1*/
+    --bg-img2: url("./utils/images/background2.png"); /*background-image-2*/
+    /* --logo-img: url("../../utils/images/logo.png");  logo-img */
+    /* --icon-img: url("../../utils/images/icon.png") icon */
+    }
+    
+    /* ---------- Sizing ---------- */
+    /* size-icon */
+    .s-i{
+    width: 25px;
+    }
+    
+     /* size-small */
+    .s-sm {
+    width: 300px;
+    height: auto;
+    }
+    
+    /* size-medium */
+    .s-md {
+    width: 450px;
+    height: auto;
+    }
+    
+    /* size-large  */
+    .s-lg{
+    width: 900px;
+    height: auto;
+    }
+    
+    .bg-parallax{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-image: url("./utils/images/background.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-y: scroll;
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    .bg-full-width{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-image: url("./utils/images/background.png");
+        background-position: right;
+        background-size: auto;
+        background-repeat: no-repeat; 
+    }
+    
+    .bg-repeat{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        background-image: var(--bg_img2);
+        background-position: right;
+        background-repeat: repeat;
+    }
+    
+    .overlay {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-image: var(--bg-img1);
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat; 
+        opacity: 50%;
+    }
+    
+    .circle{
+        border-radius: 50%;
+    }
+    
+    .curved-ends{
+        border-radius: 25%;
+    }
+    
+    
+    @media screen and (max-width: 600px){
+    .s-lg{
+        width: 500px;
+    }
+    }
+    @media screen and (max-width: 400px){
+    .s-lg{
+        width: 300px;
+    }
+    
+    }
+    /* --- Webpage CSS ------------------------------------------- */
+
+    img{ width: 300px;}
+
+    *{
+        color: var(--c-s);
+        font-family: 'Chivo', sans-serif;
+    }
+    h1{
+        font-family: 'Permanent Marker', cursive;
+    }
+
+    #screen{
+        background-color: var(--c-q);
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+    }
+    #layout {
+        position: relative;
+        background-image: var(--bg-img2);
+        /* background-color: var(--c-t); */
+        background-position: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        box-shadow: 10px 10px 20px black;
+        padding-bottom: 10%;
+    }
+    #logo{
+        position: relative;
+        top: -50px;
+        left: -50px;
+        box-shadow: 10px 10px 20px black;
+        width: 200px
+    }
+    .header img{
+        position: relative;
+        right: 60%;
+        width: 750px;
+        /* transform: skewY(3deg); */
+        box-shadow: 10px 10px 20px black;
+        opacity: 50%;
+
+    }
+    #tagline{
+        position: relative;
+        top: 20px;
+        left: 30%;
+        font-size: 80px;
+        z-index: 1;
+        transform: skewY(-5deg);
+        width: 100%;
+        margin-top: auto;
+        margin-bottom: auto;
+        opacity: 110%;
+    }
+    .static{
+        padding: 5% 15% 5% 10%;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .static  p{
+        font-size: 15px;
+        width: auto;
+    }
+    
+    .static img{
+        box-shadow: 10px 10px 20px black;
+    }
+    .static-txt{
+        background-color: var(--c-t);
+        
+    }
+    .carousel{
+        width: 900px;
+        height: 600px;
+        margin-bottom: 10%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .carousel img{
+        width: 900px;
+        height: 600px;
+        opacity: 80%;
+        box-shadow: 10px 10px 20px black;
+    }
+
+    .services-we-offer{
+        margin: 25% 10% 25% 10%;
+        text-align: center;
+        background-color: var(--c-p);
+        border-radius: 50%;
+        font-size: 70px;
+    }
+    .service_card{
+        background-color: var(--c-q);
+        height: 380px;
+        width: 310px;
+        padding: 10px;
+        overflow: hidden;
+        margin: 15%;
+        box-shadow: 10px 10px 20px black;
+        position: relative;
+        right: 30px;
+        
+    }
+    .service_card img{
+        width: 290px;
+        height: 270px;
+    }
+    .service_card h1{
+        font-size: 25px;
+        color: var(--c-p);
+        text-align: center;
+    }
+    .location{
+        margin: 10%;
+        background-color: var(--c-p);
+        padding: 5%;
+        border-radius: 20%;
+        border: solid 5px var(--c-s);
+    }
+    .forBlog{
+        width: 300px;
+        margin: -10% 10% 0% 10%;
+        position: relative;
+        top: 150px;
+        right: 50px;
+        z-index: 100;
+    }
+    #link2blog{
+        font-size: 15px;
+        position: relative;
+        top: -150px;
+    }
+    .blog{
+        font-size: 80px;
+        width: 100%;
+        text-align: center;
+    }
+    #blog-post{
+        text-align: center;
+        background-color: var(--c-p);
+        margin: 0% 15% 0% 15%;
+        padding: 5%;
+    }
+    #blog-post img{
+        width: 600px;
+
+    }
